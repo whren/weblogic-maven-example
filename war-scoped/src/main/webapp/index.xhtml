@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xml:lang="en" lang="en">
+<head>
+  <title></title>
+</head>
+<body>
+
+<h:form>
+
+  <h:panelGrid columns="2">
+    <h:outputText value="Cache Name:"/>
+    <h:inputText value="#{ExampleControllerBean.cacheName}"/>
+
+    <h:outputText value="Entry Key:"/>
+    <h:inputText value="#{ExampleControllerBean.entryKey}"/>
+
+    <h:outputText value="Entry Value:"/>
+    <h:inputText value="#{ExampleControllerBean.entryValue}"/>
+
+    <h:commandButton value="GET" action="#{ExampleControllerBean.performCacheGet}"/>
+    <h:commandButton value="PUT" action="#{ExampleControllerBean.performCachePut}"/>
+
+  </h:panelGrid>
+
+
+</h:form>
+
+</body>
+</html>

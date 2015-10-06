@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<weblogic-web-app
+    xmlns="http://xmlns.oracle.com/weblogic/weblogic-web-app"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd
+        http://xmlns.oracle.com/weblogic/weblogic-web-app http://xmlns.oracle.com/weblogic/weblogic-web-app/1.2/weblogic-web-app.xsd">
+
+  <context-root>/ear-scoped</context-root>
+  
+  <library-ref>
+    <library-name>jsf</library-name>
+    <specification-version>2.0</specification-version>
+    <exact-match>false</exact-match>
+  </library-ref>
+
+  <session-descriptor>
+    <debug-enabled>true</debug-enabled>
+    <persistent-store-type>replicated_if_clustered</persistent-store-type>
+    <url-rewriting-enabled>true</url-rewriting-enabled>
+  </session-descriptor>
+
+</weblogic-web-app>
