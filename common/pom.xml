@@ -15,7 +15,7 @@
   <properties>
     <maven.build.timestamp.format>yyyyMMdd.HHmm</maven.build.timestamp.format>
     <weblogic.Deployer.isLibrary>false</weblogic.Deployer.isLibrary>
-    <middleware.home>c:/wls1035</middleware.home>
+    <middleware.home>/u01/oracle/weblogic</middleware.home>
     <weblogic.home>${middleware.home}/wlserver_10.3</weblogic.home>
   </properties>
 
@@ -122,6 +122,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.3</version>
         <configuration>
           <source>1.6</source>
           <target>1.6</target>
