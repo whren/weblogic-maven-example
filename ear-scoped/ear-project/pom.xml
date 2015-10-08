@@ -4,7 +4,7 @@
   <parent>
     <artifactId>common</artifactId>
     <groupId>com.oracle.weblogic.examples.coherence</groupId>
-    <version>10.3.5</version>
+    <version>10.3.6</version>
     <relativePath>../../common/pom.xml</relativePath>
   </parent>
 
@@ -13,7 +13,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.oracle.weblogic.examples.coherence.ear-scoped</groupId>
   <artifactId>ear-project</artifactId>
-  <version>10.3.5</version>
+  <version>10.3.6</version>
   <packaging>ear</packaging>
 
   <build>
@@ -46,7 +46,7 @@
     <dependency>
       <groupId>com.oracle.weblogic.examples.coherence.ear-scoped</groupId>
       <artifactId>web-project</artifactId>
-      <version>10.3.5</version>
+      <version>10.3.6</version>
       <type>war</type>
     </dependency>
   </dependencies>
