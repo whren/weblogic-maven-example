@@ -39,6 +39,11 @@ public class ExampleController {
     return "index";
   }
 
+  public String performCachePurge() {
+    cache = new HashMap<String, String>();
+    return "index";
+  }
+
   public String getCacheName() {
     return cacheName;
   }
