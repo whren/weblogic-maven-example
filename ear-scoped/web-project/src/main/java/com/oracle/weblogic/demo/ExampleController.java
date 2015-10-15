@@ -17,7 +17,7 @@ import javax.faces.bean.SessionScoped;
 @ManagedBean(name = "ExampleControllerBean")
 @SessionScoped
 public class ExampleController {
-  public static Map<String, String> cache = new HashMap<String, String>();
+  public static final Map<String, String> cache = new HashMap<String, String>();
 
   public ExampleController() {
     //CacheFactory.ensureCluster();
